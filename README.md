@@ -12,6 +12,8 @@
 
 ## About the project
 Based on the arXiv dataset, the most important topics / trends from 2021-2022 are extracted using KMeans, LDA (gensim) and Top2Vec.
+Figures about taxonomy, categories, t-SNE for the KMeans model, topic trends and distributions will be plotted and saved to the same folder main.py is running.
+Additionally a html according to the LDA model will be saved as well.
 
 IMPORTANT:
 This app was developed as part of a case-study course for my Data Science degree and contains the basic requirements according to the assignment. Further development is not planned, although many improvements concerning object-oriented programming and error-handling would be possible and within the scope of my skills.
@@ -40,14 +42,18 @@ You can download the latest version of Python [here](https://www.python.org/down
 **How To:**<br>
 The easiest way to use this app is to download the following files:
 
-/habittracker/main.py
+/main.py
 
 arXiv Dataset: https://www.kaggle.com/datasets/Cornell-University/arxiv
 
 ## Usage / How to
 
 You only have to run main.py. Make sure you have downloaded the arXiv Dataset.
-There are a few parameters set in the code. Feel free to change those - for example the filter criteria for the time period or the stop-words.  
+There are a few parameters set in the code. Feel free to change those - for example the filter criteria for the time period or the stop-words.
+
+The validation of KMeans (Elbow method) and LDA (coherence score) are commented out in the code presented here.
+
+Once the code is running, it takes a lot of time due to the complex calculations of multiple models. 
 
 ## Contributing 
 With reference to the fact that this app was created in the course of my studies and I am therefore in a constant learning process, I am happy to receive any feedback.
